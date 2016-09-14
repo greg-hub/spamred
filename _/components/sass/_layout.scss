@@ -1,0 +1,522 @@
+/*==================================
+=            Susy setup            =
+==================================*/
+// $total-columns	: 12;
+// $colums-width	: 4em;
+// $gutter-width		: 1em;
+// $grid-padding		: $gutter-width;
+
+@include border-box-sizing;
+
+$mobile		: 0em 30em;
+$tablet			: 30em 70em;
+$desktop		: 70em;
+
+/*----------  global  ----------*/
+$susy: (
+	columns: 12,
+	gutters: 1/4,
+);
+
+
+@include layout( 12 1/4 fluid float inside) ;
+
+/*=====  End of Susy setup  ======*/
+
+/*==============================
+=            Header            =
+==============================*/
+
+header.hero {
+	@include container (100%);
+		
+		.bg {
+			z-index: 2;
+			@include breakpoint($mobile) {
+			// @include single-transition(all, 1s, ease-out);
+			position: relative;
+			display: block;
+			height: 100vh;
+			@include background (image-url('bg.jpg'));
+			background-attachment: fixed;
+			background-position: center center;
+			background-repeat: no-repeat;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			margin: 0 auto;
+				
+			}//breakpoint small
+
+				@include breakpoint($tablet) {
+				// @include single-transition(all, 1s, ease-out);
+				position: relative;
+				display: block;
+				height: 100vh;
+				@include background (image-url('bg.jpg'));
+				background-attachment: fixed;
+				background-position: center center;
+				background-repeat: no-repeat;
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				
+			
+				} //bp medium
+
+					@include breakpoint($desktop) {
+					// @include single-transition(all, 1s, ease-out);
+					position: relative;
+					display: block;
+					height: 100vh;
+					@include background (image-url('bg.jpg'));
+					background-attachment: fixed;
+					background-position: center center;
+					background-repeat: no-repeat;
+					-webkit-background-size: cover;
+					-moz-background-size: cover;
+					-o-background-size: cover;
+					margin: 0 auto;
+				
+					} //bp desktop
+
+		} //bg
+
+		.logo	{	
+				position: absolute;
+				height: 150px;
+				width: 100%;
+				max-width: 100%;
+				@include background (image-url('logo.png'));
+				background-position:  center;
+				background-repeat: no-repeat;
+				top: 10%;
+				background-size: contain;	
+
+				@include breakpoint($mobile) {
+				height: 150px;
+				width: 100%;
+				max-width: 100%;
+				@include background (image-url('mobilelogo.png'));
+				background-position:  center;
+				background-repeat: no-repeat;
+				position: absolute;
+				top: 10%;
+			} //mobile
+
+
+
+	
+			} //logo
+
+
+
+		#widget {
+				border: none;
+				position: absolute;
+				border: none;
+				height: 4em;
+				top: 35%;
+				left: 50%;
+				transform: translate(-50%, 0);
+				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+					
+
+				} //widget
+
+		.fa-chevron-circle-down{
+				color: #fff;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, 0);
+			}
+
+
+		.fa-chevron-circle-down:hover {
+				color: green;
+			}
+
+
+
+		.cms {
+				z-index: 2;
+		
+
+				@include breakpoint($mobile)  {
+				width: 100%;
+				max-width: 100%;
+				height:  400px;
+				@include background (image-url('spamred.png'));
+				background-repeat: no-repeat;
+				position:absolute;
+				background-position: bottom;
+				background-size: contain;
+				bottom: 0px;
+				left: 0;
+				
+				} //mobile
+
+				@include breakpoint($tablet)  {
+				max-width: 100%;
+				height:  400px;
+				@include background (image-url('spamred.png'));
+				background-repeat: no-repeat;
+				position:absolute;
+				background-position: bottom;
+				background-size: contain;
+				bottom: 0px;
+				
+
+				}
+				
+				@include background (image-url('spamred.png'));
+				
+				width: 430px;
+				height: 400px;
+				max-height: 450px;
+				background-size: contain;
+				position: absolute;
+				background-repeat: no-repeat;
+				background-position: right bottom;
+				bottom: 0;
+				right: 30em; 
+			
+			
+			} //cms
+
+} /*=====  End of Header  ======*/
+
+
+/*=================================
+=            Info text            =
+=================================*/
+
+
+
+
+
+
+section#text {
+			
+		width: 100%;
+		height: auto;
+		@include background  (image-url('newbg.jpg'));
+		background-repeat: no-repeat;
+		background-size: cover;	
+		z-index: 2;
+		position: relative;
+		.spamhead{
+		@include breakpoint($mobile) {
+			height: 20em;
+		}
+
+		@include breakpoint($tablet) {
+			height: 20em;
+			// max-width: 100%;
+		}
+		@include background  (image-url('spampencutouts.png'));
+		position: absolute;
+		height: 500px;
+		max-height: auto;
+		width: 100%;
+		max-width: 100%;
+		background-position: bottom center;
+		background-repeat: no-repeat;
+		background-size: contain;
+		bottom: 2em;
+
+
+	}	
+
+		hr {
+			opacity: 0.3;
+			width: 60%;
+
+			} //hr
+
+		@include breakpoint($mobile) {
+			height: 26em;
+		
+		h1 {
+			font-size: 2rem;
+			text-align: center;
+			padding: 1%;
+			color: $h1-text;
+			font-family: 'Roboto', sans-serif;
+		}
+
+		h5 {
+			font-size:  1.2rem;
+			text-align: center;
+			padding: 2%;
+			color: $p-text;
+			font-family: 'Roboto', sans-serif;
+		}
+
+
+	
+		} // bp mobile
+
+			@include breakpoint($tablet) {
+
+				height: 36em;
+				h1 {
+				font-size: 2.5rem;
+				text-align: center;
+				padding: 1%;
+				color: $h1-text;
+				font-family: 'Roboto', sans-serif;
+				}
+				
+				h5 {
+				font-size:  1.6rem;
+				text-align: center;
+				padding: 2%;
+				color: $p-text;
+				font-family: 'Roboto', sans-serif;
+				} 
+
+		} // bp tablet
+
+				@include breakpoint($desktop) {
+					height: 50em;
+
+					h1 {
+					font-size: 3rem;
+					text-align: center;
+					padding-top: 1%;
+					padding-bottom: 0;
+					color: $h1-text;
+					font-family: 'Roboto', sans-serif;
+
+					}
+					
+					h5 {
+					@include span (isolate 6 at 4 of 12);
+				
+					font-size:  1.6rem;
+					text-align: center;
+					margin-top: 0.5em; 
+					color: $p-text;
+					font-family: 'Roboto', sans-serif;
+
+
+					} 
+
+					} //desktop
+
+
+
+
+} /*=====  End of Info text  ======*/
+
+/*=================================
+=            red photo            =
+=================================*/
+
+// #redbg {
+
+// 	z-index: 2;
+// 	position: relative;
+// 	@include breakpoint($mobile) {
+// 			height: 20em;
+// 		}
+
+// 	@include breakpoint($tablet) {
+// 		height: 20em;
+// 	}
+// 	@include background  (image-url('newbg.jpg'));
+// 	position: relative;
+// 	height: 30em;
+// 	width: 100%;
+// 	max-height: auto;
+// 	max-width: 100%;
+// 	background-repeat: no-repeat;
+// 	background-position: center;
+// 	background-size: cover;
+
+	// .spamhead{
+	// 	@include breakpoint($mobile) {
+	// 		height: 20em;
+	// 	}
+
+	// 	@include breakpoint($tablet) {
+	// 		height: 20em;
+	// 	}
+	// 	@include background  (image-url('spampencutouts.png'));
+	// 	position: absolute;
+	// 	height: 500px;
+	// 	max-height: auto;
+	// 	width: 100%;
+	// 	max-width: 100%;
+	// 	background-position: bottom center;
+	// 	background-repeat: no-repeat;
+	// 	background-size: contain;
+	// 	bottom:  2em;
+
+
+	// }	
+
+// }
+
+
+
+
+/*=====  End of red photo  ======*/
+
+
+
+
+/*==============================
+=		twtich            =
+==============================*/
+#tlogo{
+	display: flex;
+	justify-content: center;
+	height: auto;
+	max-width: 100%;
+	padding-top: 3em;
+	padding-bottom: 1em;
+	background-color: #000;
+	z-index: 2;
+	position: relative;
+}
+
+/*twitch stream*/
+
+#streaming {
+	display:  flex;
+	 z-index: 2;
+
+}
+
+ #twitch-container{
+ 	 z-index: 2;
+ 	
+ 	@include breakpoint($mobile) {
+		height: 30em;
+ 	}
+    	display:flex;
+   	position: relative; 
+   	width: 100%; 
+   	height: 45em; 
+
+ }
+
+#twitch-container iframe{
+	position: absolute; 
+	border: none;
+	left: 0px; 
+	top: 0px; 
+	width: 100%; 
+	height: 100%;
+
+}
+
+/*=====  end of  twtich   ======*/
+
+/*===============================
+=            Twitter            =
+===============================*/
+section.twitter {
+
+	#twitter-button{
+    	padding-top: 1em;
+    	display: flex;
+ 	justify-content: center;
+ 	position: relative;
+ 	z-index: 2;
+ 	background-color: #fff
+	}
+
+	#twitter-feed {
+   	display: flex;
+    	justify-content: center;
+   	padding-bottom: 0;
+   	 position: relative;
+ 	z-index: 2;
+ 	background-color: #fff;
+ 	margin-bottom: 10em;
+}
+
+} /*=====  End of Twitter  ======*/
+
+/*==============================
+=            Footer            =
+==============================*/
+
+section.footer {
+	text-align: center;
+	@include background (image-url('bg-footer.png'));
+	background-size: cover;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	
+
+	.social-icons {
+		padding-top: 0.5em;
+
+	}
+
+	.fa-twitter {
+    	color: #fff;
+    	padding-right: 2%;
+    
+	}
+
+	.fa-twitter:hover {
+   	 color:  #4099FF;
+	}
+
+	.fa-twitch {
+    	color: #fff;
+	}
+
+	.fa-twitch:hover {
+    	color: #B9A3E3;
+	}
+
+	hr {
+		opacity: 0.3;
+		width: 60%;
+
+	}
+
+	p.copy,  {
+		text-align: center;
+		color: $p-text;
+		padding-top: 1em;
+		padding-bottom: 0.5em;
+		font-size: 0.8rem;
+	}
+
+	p.me {
+		text-align: center;
+		color: $p-text;
+		padding-bottom: 0.3em;
+		font-size: 0.8rem;
+		
+	}
+
+	p.me a{
+		color: $p-text
+	}
+
+	.me a:hover {
+		color: #69bd45
+	}
+
+} /*=====  End of Footer  ======*/ 
+
+
+
+
+
+
+
+
+
+
+

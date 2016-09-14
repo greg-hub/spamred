@@ -1,0 +1,501 @@
+/* line 5, ../../../../../../tools/ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../tools/ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../tools/ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../tools/ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../tools/ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../tools/ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../tools/ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../tools/ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../tools/ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 1, ../components/sass/_base.scss */
+a {
+  text-decoration: none;
+}
+
+/*==================================
+=            Susy setup            =
+==================================*/
+/* line 21, ../../../../../../tools/ruby23/lib/ruby/gems/2.3.0/gems/susy-2.2.12/sass/susy/language/susy/_box-sizing.scss */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*----------  global  ----------*/
+/*=====  End of Susy setup  ======*/
+/*==============================
+=            Header            =
+==============================*/
+/* line 30, ../components/sass/_layout.scss */
+header.hero {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../../../../../tools/ruby23/lib/ruby/gems/2.3.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
+header.hero:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 33, ../components/sass/_layout.scss */
+header.hero .bg {
+  z-index: 2;
+}
+@media (min-width: 0em) and (max-width: 30em) {
+  /* line 33, ../components/sass/_layout.scss */
+  header.hero .bg {
+    position: relative;
+    display: block;
+    height: 100vh;
+    background: url('../../img/bg.jpg?1473766651');
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 30em) and (max-width: 70em) {
+  /* line 33, ../components/sass/_layout.scss */
+  header.hero .bg {
+    position: relative;
+    display: block;
+    height: 100vh;
+    background: url('../../img/bg.jpg?1473766651');
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+  }
+}
+@media (min-width: 70em) {
+  /* line 33, ../components/sass/_layout.scss */
+  header.hero .bg {
+    position: relative;
+    display: block;
+    height: 100vh;
+    background: url('../../img/bg.jpg?1473766651');
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    margin: 0 auto;
+  }
+}
+/* line 85, ../components/sass/_layout.scss */
+header.hero .logo {
+  position: absolute;
+  height: 150px;
+  width: 100%;
+  max-width: 100%;
+  background: url('../../img/logo.png?1473776274');
+  background-position: center;
+  background-repeat: no-repeat;
+  top: 10%;
+  background-size: contain;
+}
+@media (min-width: 0em) and (max-width: 30em) {
+  /* line 85, ../components/sass/_layout.scss */
+  header.hero .logo {
+    height: 150px;
+    width: 100%;
+    max-width: 100%;
+    background: url('../../img/mobilelogo.png?1473776505');
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 10%;
+  }
+}
+/* line 114, ../components/sass/_layout.scss */
+header.hero #widget {
+  border: none;
+  position: absolute;
+  border: none;
+  height: 4em;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/* line 127, ../components/sass/_layout.scss */
+header.hero .fa-chevron-circle-down {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+/* line 136, ../components/sass/_layout.scss */
+header.hero .fa-chevron-circle-down:hover {
+  color: green;
+}
+/* line 142, ../components/sass/_layout.scss */
+header.hero .cms {
+  z-index: 2;
+  background: url('../../img/spamred.png?1473762499');
+  width: 430px;
+  height: 400px;
+  max-height: 450px;
+  background-size: contain;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  bottom: 0;
+  right: 30em;
+}
+@media (min-width: 0em) and (max-width: 30em) {
+  /* line 142, ../components/sass/_layout.scss */
+  header.hero .cms {
+    width: 100%;
+    max-width: 100%;
+    height: 400px;
+    background: url('../../img/spamred.png?1473762499');
+    background-repeat: no-repeat;
+    position: absolute;
+    background-position: bottom;
+    background-size: contain;
+    bottom: 0px;
+    left: 0;
+  }
+}
+@media (min-width: 30em) and (max-width: 70em) {
+  /* line 142, ../components/sass/_layout.scss */
+  header.hero .cms {
+    max-width: 100%;
+    height: 400px;
+    background: url('../../img/spamred.png?1473762499');
+    background-repeat: no-repeat;
+    position: absolute;
+    background-position: bottom;
+    background-size: contain;
+    bottom: 0px;
+  }
+}
+
+/*=====  End of Header  ======*/
+/*=================================
+=            Info text            =
+=================================*/
+/* line 200, ../components/sass/_layout.scss */
+section#text {
+  width: 100%;
+  height: auto;
+  background: url('../../img/newbg.jpg?1473786115');
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 2;
+  position: relative;
+}
+/* line 209, ../components/sass/_layout.scss */
+section#text .spamhead {
+  background: url('../../img/spampencutouts.png?1473849043');
+  position: absolute;
+  height: 500px;
+  max-height: auto;
+  width: 100%;
+  max-width: 100%;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  bottom: 2em;
+}
+@media (min-width: 0em) and (max-width: 30em) {
+  /* line 209, ../components/sass/_layout.scss */
+  section#text .spamhead {
+    height: 20em;
+  }
+}
+@media (min-width: 30em) and (max-width: 70em) {
+  /* line 209, ../components/sass/_layout.scss */
+  section#text .spamhead {
+    height: 20em;
+  }
+}
+/* line 232, ../components/sass/_layout.scss */
+section#text hr {
+  opacity: 0.3;
+  width: 60%;
+}
+@media (min-width: 0em) and (max-width: 30em) {
+  /* line 200, ../components/sass/_layout.scss */
+  section#text {
+    height: 26em;
+  }
+  /* line 241, ../components/sass/_layout.scss */
+  section#text h1 {
+    font-size: 2rem;
+    text-align: center;
+    padding: 1%;
+    color: #2f2d2e;
+    font-family: 'Roboto', sans-serif;
+  }
+  /* line 249, ../components/sass/_layout.scss */
+  section#text h5 {
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 2%;
+    color: #2f2d2e;
+    font-family: 'Roboto', sans-serif;
+  }
+}
+@media (min-width: 30em) and (max-width: 70em) {
+  /* line 200, ../components/sass/_layout.scss */
+  section#text {
+    height: 36em;
+  }
+  /* line 264, ../components/sass/_layout.scss */
+  section#text h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 1%;
+    color: #2f2d2e;
+    font-family: 'Roboto', sans-serif;
+  }
+  /* line 272, ../components/sass/_layout.scss */
+  section#text h5 {
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 2%;
+    color: #2f2d2e;
+    font-family: 'Roboto', sans-serif;
+  }
+}
+@media (min-width: 70em) {
+  /* line 200, ../components/sass/_layout.scss */
+  section#text {
+    height: 50em;
+  }
+  /* line 285, ../components/sass/_layout.scss */
+  section#text h1 {
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 0;
+    color: #2f2d2e;
+    font-family: 'Roboto', sans-serif;
+  }
+  /* line 295, ../components/sass/_layout.scss */
+  section#text h5 {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 50%;
+    float: left;
+    margin-left: 25%;
+    margin-right: -100%;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+    font-size: 1.6rem;
+    text-align: center;
+    margin-top: 0.5em;
+    color: #2f2d2e;
+    font-family: 'Roboto', sans-serif;
+  }
+}
+
+/*=====  End of Info text  ======*/
+/*=================================
+=            red photo            =
+=================================*/
+/*=====  End of red photo  ======*/
+/*==============================
+=		twtich            =
+==============================*/
+/* line 374, ../components/sass/_layout.scss */
+#tlogo {
+  display: flex;
+  justify-content: center;
+  height: auto;
+  max-width: 100%;
+  padding-top: 3em;
+  padding-bottom: 1em;
+  background-color: #000;
+  z-index: 2;
+  position: relative;
+}
+
+/*twitch stream*/
+/* line 388, ../components/sass/_layout.scss */
+#streaming {
+  display: flex;
+  z-index: 2;
+}
+
+/* line 394, ../components/sass/_layout.scss */
+#twitch-container {
+  z-index: 2;
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 45em;
+}
+@media (min-width: 0em) and (max-width: 30em) {
+  /* line 394, ../components/sass/_layout.scss */
+  #twitch-container {
+    height: 30em;
+  }
+}
+
+/* line 407, ../components/sass/_layout.scss */
+#twitch-container iframe {
+  position: absolute;
+  border: none;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+/*=====  end of  twtich   ======*/
+/*===============================
+=            Twitter            =
+===============================*/
+/* line 424, ../components/sass/_layout.scss */
+section.twitter #twitter-button {
+  padding-top: 1em;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  background-color: #fff;
+}
+/* line 433, ../components/sass/_layout.scss */
+section.twitter #twitter-feed {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 0;
+  position: relative;
+  z-index: 2;
+  background-color: #fff;
+  margin-bottom: 10em;
+}
+
+/*=====  End of Twitter  ======*/
+/*==============================
+=            Footer            =
+==============================*/
+/* line 449, ../components/sass/_layout.scss */
+section.footer {
+  text-align: center;
+  background: url('../../img/bg-footer.png?1473776659');
+  background-size: cover;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+/* line 458, ../components/sass/_layout.scss */
+section.footer .social-icons {
+  padding-top: 0.5em;
+}
+/* line 463, ../components/sass/_layout.scss */
+section.footer .fa-twitter {
+  color: #fff;
+  padding-right: 2%;
+}
+/* line 469, ../components/sass/_layout.scss */
+section.footer .fa-twitter:hover {
+  color: #4099FF;
+}
+/* line 473, ../components/sass/_layout.scss */
+section.footer .fa-twitch {
+  color: #fff;
+}
+/* line 477, ../components/sass/_layout.scss */
+section.footer .fa-twitch:hover {
+  color: #B9A3E3;
+}
+/* line 481, ../components/sass/_layout.scss */
+section.footer hr {
+  opacity: 0.3;
+  width: 60%;
+}
+/* line 487, ../components/sass/_layout.scss */
+section.footer p.copy {
+  text-align: center;
+  color: #2f2d2e;
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+  font-size: 0.8rem;
+}
+/* line 495, ../components/sass/_layout.scss */
+section.footer p.me {
+  text-align: center;
+  color: #2f2d2e;
+  padding-bottom: 0.3em;
+  font-size: 0.8rem;
+}
+/* line 503, ../components/sass/_layout.scss */
+section.footer p.me a {
+  color: #2f2d2e;
+}
+/* line 507, ../components/sass/_layout.scss */
+section.footer .me a:hover {
+  color: #69bd45;
+}
+
+/*=====  End of Footer  ======*/

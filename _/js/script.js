@@ -1,0 +1,1 @@
+$(window).scroll(function(){var a=$(this).scrollTop();$(".logo").css({transform:"translate(0px, "+a/4+"%)"}),$("#widget").css({transform:"translate(-50, "+a/100+"%)"})}),$(document).ready(function(){$('a[href^="#"]').on("click",function(a){a.preventDefault();var b=this.hash,c=$(b);$("html, body").stop().animate({scrollTop:c.offset().top},1500,"swing",function(){})})});
